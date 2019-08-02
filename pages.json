@@ -1,0 +1,71 @@
+{
+	"pages": [
+		{
+		    "path" : "pages/liketab/liketab",
+		    "style" : {}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "HelloGitHub"
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": {}
+		},
+		{
+			"path": "pages/ucenter/ucenter",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}, {
+			"path": "pages/volume/volume",
+			"style": {
+				"navigationBarTitleText": "HelloGitHub"
+			}
+		}
+        ,{
+            "path" : "pages/character/character",
+            "style" : {}
+        }
+    ],
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#2F85FC",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+			"pagePath": "pages/category/category",
+			"iconPath": "static/image/category.png",
+			"selectedIconPath": "static/image/category_HL.png",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/volume/volume",
+			"iconPath": "static/image/volume.png",
+			"selectedIconPath": "static/image/volume_HL.png",
+			"text": "月刊"
+		},{
+			"pagePath": "pages/character/character",
+			"iconPath": "static/image/character.png",
+			"selectedIconPath": "static/image/character_HL.png",
+			"text": "个性化"
+		} ]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "HelloGitHub",
+		"navigationBarBackgroundColor": "#000000",
+		"backgroundColor": "#FFFFFF"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
